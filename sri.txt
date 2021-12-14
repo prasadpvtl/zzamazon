@@ -1,0 +1,4 @@
+#table declarations
+a type t001 bukra,
+select-options: s_bukrs for a.
+
