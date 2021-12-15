@@ -1,4 +1,22 @@
-fefjb;jb;ub;;;e2f j#table declarations
-a type t001 bukra,
-select-options: s_bukrs for a.
+types declarations 
+
+a type t001-bukrs,
+select-options: s_bukrs types.
+
+bukrs type t001-bukrs,
+butxt type t001-butxt,
+ort01 type t001-ort01,
+
+wa_t001 type ty_t001,
+it_t001 type table of ty_t001.
+
+select bukrs butxt ort01 from t001 into table it_t001
+where bukrs in s_bukrs.
+
+loop it_t001 into wa_t001
+write: t001-bukrs,
+        t001-butxt,
+	t001-ort01.
+
+	endloop.
 
